@@ -65,6 +65,10 @@ public class Principal {
 
 		switch (opcion) {
 
+		case 0: {
+			System.out.println("Saliendo de la aplicación");
+			return opcion;
+		}
 		case 1: {
 			Empleado empleado = pedirEmpleado();
 			ControladorEmpleado.insertar(empleado);
@@ -112,11 +116,6 @@ public class Principal {
 			ControladorDepartamento.Eliminar(departamento);
 			break;
 		}
-		case 9: {
-			System.out.println("Saliendo de la aplicación");
-			return opcion;
-		}
-
 		}
 		return 1;
 	}
