@@ -1,0 +1,39 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+    <class name="clasesVO.Empleado" table="EMPLEADO">
+        <id name="codigo" type="int">
+            <column name="CODIGO" />
+            <generator class="assigned" />
+        </id>
+        
+        <property name="nombre" type="java.lang.String">
+            <column name="NOMBRE" />
+        </property>
+         <property name="apellido1" type="java.lang.String">
+            <column name="APELLIDO1" />
+        </property>
+        <property name="apellido2" type="java.lang.String">
+            <column name="APELLIDO2" />
+        </property>
+        <property name="lugarNacimiento" type="java.lang.String">
+            <column name="LUGAR_NACIMIENTO" />
+        </property>
+        <property name="fechaNacimiento" type="java.lang.String">
+            <column name="FECHA_NACIMIENTO" />
+        </property>
+        <property name="direccion" type="java.lang.String">
+            <column name="DIRECCION" />
+        </property>
+        <property name="telefono" type="java.lang.String">
+            <column name="TELEFONO" />
+        </property>
+        <property name="puesto" type="java.lang.String">
+            <column name="PUESTO" />
+        </property>
+        <property name="codDepartamento" type="int">
+            <column name="COD_DEPARTAMENTO" />
+        </property>
+    </class>
+</hibernate-mapping>
